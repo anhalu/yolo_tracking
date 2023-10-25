@@ -23,6 +23,6 @@ def write_mot_results(txt_path, results, frame_idx):
     txt_path.parent.mkdir(parents=True, exist_ok=True)
     # create mot txt file
     txt_path.touch(exist_ok=True)
-
+    
     with open(str(txt_path), 'ab+') as f:  # append binary mode
-        np.savetxt(f, mot.numpy(), fmt='%d')  # save as ints instead of scientific notation
+        np.savetxt(f, mot.numpy(), fmt=',')  # save as ints instead of scientific notation
