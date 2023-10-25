@@ -197,3 +197,11 @@ def parse_opt():
 if __name__ == "__main__":
     opt = parse_opt()
     run(opt)
+    
+    
+    
+    
+ #$ python3 examples/val.py --yolo-model yolo_nas_s.pt --reid-model osnetx1_0_dukemtcereid.pt --tracking-method deepocsort --benchmark MOT16 --yolo-model yolox_n.pt    --reid-model osnet_ain_x1_0_msmt17.pt  --tracking-method ocsort     --benchmark MOT17 --yolo-model yolov8s.pt    --reid-model lmbn_n_market.pt --tracking-method strongsort --benchmark <your-custom-dataset>
+ 
+ # python3 examples/track.py --source data/Doto_103.mp4 --yolo-model yolox_x --tracking-method botsort --reid-mode clip_market1501.pt --classes 0 --save-mot --conf 0.2 --iou 0.5 --show --device 0
+
