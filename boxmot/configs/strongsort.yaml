@@ -1,6 +1,6 @@
 ecc: true
 ema_alpha: 0.8
-max_age: 30
+max_age: 100
 max_dist: 0.2
 max_iou_dist: 0.7
 mc_lambda: 0.995
